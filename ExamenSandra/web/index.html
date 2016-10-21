@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JS/FuncionBoton.js" type="text/javascript"></script>
+    </head>
+    <body>
+       <form action="FigurasServlet" method="post">
+        <input type="hidden" id="opcionE" name="opcionE" />  
+        Introduce los datos que se te piden y selecciona la opcion que desees
+        <h1>Cuadrado</h1>
+        </br>
+        Lado<input type="number" id="lado" name="lado" placeholder="lado" /><br><br>
+        <input type="submit" id="areaCua" name="areaCua" value="area" onclick="botonOpcion('areaCua')"/>&nbsp;&nbsp;
+        <input type="submit" id="perimetroCua" name="perimetroCua" value="perimetro" onclick="botonOpcion('perimetroCua')"/></br></br>
+        <input type="button" id="regresar" name="regresar" value="regresar"/>       
+        <h1>Circulo</h1>
+        </br>
+        Diametro<input type="number" id="diametro" name="diametro" placeholder="diametro"/><br><br>
+        <input type="submit" id="areaCir" name="areaCir" value="area" onclick="botonOpcion('areaCir')"/>&nbsp;&nbsp;
+        <input type="submit" id="perimetroCir" name="perimetroCir" value="perimetro" onclick="botonOpcion('perimetroCir')"/></br></br>
+        <input type="button" id="regresar" name="regresar" value="regresar"/>               
+        </form>
+    </body>
+</html>
